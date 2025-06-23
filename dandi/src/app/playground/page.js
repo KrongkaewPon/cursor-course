@@ -12,7 +12,7 @@ export default function Playground() {
     e.preventDefault();
     setNotification({ open: false, message: '', type: 'success' });
 
-    const res = await fetch('/api/protected', {
+    const res = await fetch('/api/validate-key', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ apiKey }),
