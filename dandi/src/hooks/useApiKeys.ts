@@ -17,7 +17,6 @@ export function useApiKeys() {
 
   useEffect(() => {
     fetchApiKeys();
-    // eslint-disable-next-line
   }, []);
 
   const fetchApiKeys = async () => {

@@ -50,7 +50,7 @@ export default function Dashboard() {
         setCopiedKeyId(null);
         setToastOpen(false);
       }, 1500);
-    } catch (err) {
+    } catch {
       alert('Failed to copy!');
     }
   };
@@ -241,7 +241,7 @@ export default function Dashboard() {
                 />
               </div>
               <p className="text-xs text-gray-500">
-                *If the combined usage of all your keys exceeds your plan's limit, all requests will be rejected.
+                *If the combined usage of all your keys exceeds your plan is limit, all requests will be rejected.
               </p>
             </div>
             <div className="flex justify-end gap-4 mt-8">
@@ -327,7 +327,7 @@ export default function Dashboard() {
           <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
             <h2 className="text-2xl font-bold mb-2">Delete API Key</h2>
             <p className="text-gray-500 mb-6">
-              Are you sure you want to delete the key "{showDeleteConfirm.name}"? This action cannot be undone.
+              Are you sure you want to delete the key {showDeleteConfirm.name}? This action cannot be undone.
             </p>
             <div className="flex justify-end gap-4 mt-8">
               <button
