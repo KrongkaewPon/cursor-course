@@ -37,7 +37,7 @@ export function useApiKeys() {
 
   const createApiKey = async (name: string, limit?: number) => {
     const realKeyPart = Math.random().toString(36).substring(2, 12) + Math.random().toString(36).substring(2, 12);
-    const fullKey = `tvly-${realKeyPart}`;
+    const fullKey = `dandi-${realKeyPart}`;
     const { data, error } = await supabase
       .from('api_keys')
       .insert({

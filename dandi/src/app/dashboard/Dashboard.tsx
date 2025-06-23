@@ -180,7 +180,7 @@ export default function Dashboard() {
                 <span className="font-mono text-sm">{apiKey.name}</span>
                 <span className="font-mono text-sm">{apiKey.usage}</span>
                 <div className="font-mono text-sm bg-gray-200/60 px-2 py-1 rounded w-full truncate">
-                  {revealedKey === apiKey.id ? apiKey.api_key : 'tvly-********************'}
+                  {revealedKey === apiKey.id ? apiKey.api_key : 'dandi-********************'}
                 </div>
                 <div className="flex items-center gap-3 text-gray-500">
                   <button onClick={() => handleReveal(apiKey.id)} className="hover:text-gray-800">
